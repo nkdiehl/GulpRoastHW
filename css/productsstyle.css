@@ -1,0 +1,160 @@
+body {
+    background-color: #082B59;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    line-height: 2;
+  }
+  h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+  }
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+  /* make images flexible */
+  img {
+    max-width: 100%;
+    border-radius: 1rem;
+  }
+  a {
+    color: #59331d;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  header {
+    border-bottom: 10px solid #d98555;
+  }
+
+  /* navbar styling */
+
+  nav {font-size: 1.3rem;}
+
+nav ul {list-style-type: none;
+display: flex;
+flex-flow: row wrap;
+justify-content: center;}
+
+nav li  {
+display: block;
+}
+
+
+nav .logo img {
+  max-width: 150px;
+}
+
+nav .logo {
+  margin-right: auto;}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: .5rem;
+}
+
+a, nav a:hover {
+  color: #d98555;
+}
+
+  /* establishes a white background */
+  .main-bkgd {
+    background: #ffffff url(/images/gulp-bottom-beans.jpg) repeat-x bottom;
+    padding-bottom: 300px;
+  }
+  /* sits inside of the white background, centered */
+  .main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  footer {
+    color: #f2f2f2;
+    text-align: center;
+    border-top: 10px solid #d98555;
+  }
+  footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  footer a {
+    color: #f2f2f2;
+    font-size: 2rem;
+    display: block;
+    margin: 0 1rem 3rem 1rem;
+  }
+
+  
+.grid-item {
+    border-radius: 10px;
+  }
+  
+.main-bkgd h1 {
+    max-width: 1200px;
+    margin: 0rem auto;
+    padding: 2rem 0rem 0rem 0rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;}
+
+
+    
+@media (min-width:992px) { 
+.grid {
+  display: grid;
+grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;}
+nav ul {
+              list-style-type: none;
+              display: flex;
+              justify-content: flex-end;
+              align-items: flex-end;
+              margin-right: 1rem;
+            
+            }
+            
+          }
+
+
+@media (max-width: 992px){
+
+    .grid {display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;}
+    .main-bkgd h1 {margin: 0rem 2rem;}
+    nav .logo {
+      margin-right: auto;
+      flex-basis: 100%;
+          text-align: center;
+          margin-bottom: 1rem;
+          margin-top: 1rem;
+    }
+  
+  }
+   
+
+@media (max-width:767px) {
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;}
+  nav ul {
+      list-style-type: none;
+    width:min-content;
+    }
+    li a {
+    display: block;
+    }
+    nav {
+      display: flex;
+    justify-content: center;}
+    }
